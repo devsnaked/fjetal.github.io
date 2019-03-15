@@ -85,8 +85,13 @@ a:hover {
 
 #logo img {
   width: 150px;
+  float: left;
 }
-
+#logo h2{
+  float: left;
+  height: 72px;
+  padding-top: 25px;
+}
 #logo h1, #logo p {
 }
 
@@ -474,6 +479,7 @@ a:hover {
 	overflow: hidden;
 	height: 400px;
   background: #d0d0d1 url(images/banner-image.jpg) no-repeat center top;
+display: none;
 }
 
 #banner {
