@@ -484,3 +484,15 @@ display: none;
 
 #banner {
 }
+
+.show-image{
+	display: flex;
+}
+.show-image img{
+	width: 80%;
+}
+.show-image div{
+	display: flex;
+	width: 50%;
+	margin: 0 6px;
+}
