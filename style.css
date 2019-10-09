@@ -493,6 +493,6 @@ display: none;
 }
 .show-image div{
 	display: flex;
-	width: 50%;
+	width: 100%;
 	margin: 0 6px;
 }
