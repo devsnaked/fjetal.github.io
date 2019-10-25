@@ -11,8 +11,9 @@ body {
 	background: #FFFFFF url(images/img02.jpg) repeat-x left top;
 	font-family: 'Abel', sans-serif;
 	font-size: 14px;
-  color: #969493;
-  /* min-height: 100vh; */
+	color: #969493;
+	min-height: 100vh;
+	background: #F3F3F3;
 }
 
 h1, h2, h3 {
@@ -52,6 +53,7 @@ a:hover {
 }
 
 #wrapper {
+	background: #fff;
 }
 
 #wrapper2 {
@@ -65,32 +67,37 @@ a:hover {
 /* Header */
 
 #header {
-	overflow: hidden;
-	width: 1000px;
-	height: 150px;
-	margin: 0 auto;
-	padding: 0px 0px;
+	
+	min-height: 100px;
+	display: flex;
+	justify-content: space-between;
 }
 
 /* Logo */
 
 #logo {
 	float: left;
-	width: 320px;
-	margin: 15px 0 0 0;
+	height: 100px;
 	padding: 0px 0px 0px 0px;
 	color: #FFFFFF;
-  text-align: center;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 #logo img {
-  width: 150px;
+  width: 120px;
   float: left;
 }
 #logo h2{
-  float: left;
-  height: 72px;
-  padding-top: 25px;
+	float: left;
+	flex: 1;
+	margin: 0 10px;
+	
+}
+#logo img:last-child{
+	width: 200px;
 }
 #logo h1, #logo p {
 }
@@ -179,31 +186,30 @@ a:hover {
 /* Menu */
 
 #menu {
-	float: right;
-	width: 600px;
 	height: 90px;
-	margin: 0 auto;
 	padding: 0;
 }
 
 #menu ul {
 	float: right;
 	margin: 0;
-	padding: 25px 0px 0px 0px;
 	list-style: none;
 	line-height: normal;
+	height: 100px;
+	display: flex;
+	align-items: center;
 }
 
 #menu li {
 	float: left;
 	height: 65px;
 	padding: 0px 15px 0px 15px;
+	display: flex;
+	align-items: center;
 }
 
 #menu a {
 	display: block;
-	height: 70px;
-	line-height: 70px;
 	margin-right: 1px;
 	letter-spacing: 1px;
 	text-decoration: none;
@@ -216,7 +222,7 @@ a:hover {
 }
 
 #menu a:hover, #menu .current_page_item a {
-	border-bottom: 5px solid #1282b6;
+	border-bottom: 2px solid #1282b6;
 	text-decoration: none;
 }
 
@@ -495,4 +501,30 @@ display: none;
 	display: flex;
 	width: 100%;
 	margin: 0 6px;
+}
+.menu-info-academias{
+	width: 100%;
+	display: flex;
+	background: rgba(0, 0, 0, 0.1);
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 16px;
+}
+
+.menu-info-academias div {
+	color: black;
+	border: solid 1px #ccc;
+	display: flex;
+	flex: 1;
+	min-width: 25%;
+	justify-content: center;
+	align-items: center;
+	min-height: 40px;
+	font-weight: bold;
+}
+
+.menu-info-academias div span{
+	float: left;
+	display: block;
 }
