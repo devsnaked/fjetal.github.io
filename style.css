@@ -492,10 +492,13 @@ display: none;
 }
 
 .show-image{
+}
+.show-image div{
 	display: flex;
+	justify-content: center;
 }
 .show-image img{
-	width: 80%;
+	width: 30%;
 }
 .show-image div{
 	display: flex;
