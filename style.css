@@ -531,3 +531,17 @@ display: none;
 	float: left;
 	display: block;
 }
+
+.bolsa {
+	text-align: center;
+	margin-top: 16px;
+}
+.bolsa img {
+	width: 300px;
+	display: block;
+	margin: 0 auto;
+}
+
+.bolsa h2 {
+	text-align: center !important;
+}
